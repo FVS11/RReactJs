@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 
 const Popular = () => {
 
-    const theKey = process.env.REACT_APP_API_KEY;
+    const theKey = '60f1cbb6892f4f24909905fc98d9506f';
 
     const [popular , setPopular] = useState([]);
 
+    
 
 
     
@@ -24,16 +25,6 @@ const Popular = () => {
        
         const check = localStorage.getItem('popular');
 
-        // if(check){
-        //     setPopular(JSON.parse(check));
-        // }else{
-        //     const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${theKey}&number=12`)
-        //     const data = await api.json();
-        //     localStorage.setItem('popular', JSON.stringify(data.recipes));
-        //     setPopular(data.recipes);
-        //     console.log(data)
-            
-        // }
 
         const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${theKey}&number=12`)
         const data = await api.json();

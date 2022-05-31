@@ -5,9 +5,10 @@ import {useState, useEffect } from 'react'
 const Header = () => {
 
     const [image , setImage] = useState('')
+    const theKey = '60f1cbb6892f4f24909905fc98d9506f';
 
     const getImage = async () => {
-        const data = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}`)
+        const data = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${theKey}`)
         const image = await data.json()
         setImage(image.recipes[0].image)
         console.log(image.recipes[0].image)

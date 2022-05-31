@@ -2,7 +2,7 @@ import React from 'react'
 import {FaPizzaSlice, FaHamburger, FaHome} from 'react-icons/fa'
 import {GiNoodles, GiChopsticks } from 'react-icons/gi'
 import { NavLink } from 'react-router-dom'
-import Home from '../pages/Home'
+
 
 
 const Category = () => {

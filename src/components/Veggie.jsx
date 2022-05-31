@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 const Veggie = () => {
 
-    const theKey = process.env.REACT_APP_API_KEY;
+    const theKey = '60f1cbb6892f4f24909905fc98d9506f';
 
     const [veggie , setVeggie] = useState([]);
 
@@ -76,21 +76,5 @@ const Veggie = () => {
      </div>
   )}
 
-//   <SplideSlide key={recipes.id}>
-//   <div className='min-w-full min-h-[12rem]  rounded-lg mt-4 relative flex items-baseline justify-start flex-col border-2 ' key={recipes.id}>
-//       <div className='z-60 absolute bg-[rgba(0,0,0,0.9)] min-w-fit min-h-full top-0 left-0 w-full rounded-lg'>
-//       < div className='flex'>
-//           <h4 className='py-6 px-6  text-[#fff] z-50' >{recipes.title}</h4>
-          
-//       </div>
-//       <img className='w-full h-full object-cover bg-no-repeat bg-fit absolute top-0  left-0 rounded-lg ' src={recipes.image} alt={recipes.title} />
-
-
-//       </div>
-
-//   </div>
-//   </SplideSlide>
-
-{/* <img className='absolute   w-full h-full object-cover bg-no-repeat  top-0  left-0 rounded-lg ' src={recipes.image} alt={recipes.title} /> */}
 
 export default Veggie ;

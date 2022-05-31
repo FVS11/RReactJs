@@ -6,13 +6,14 @@ import { useParams } from 'react-router-dom'
 const Recipe = () => {
 
     const [details, setDetails] = useState({})
+    const theKey = '60f1cbb6892f4f24909905fc98d9506f';
 
 
 
     let params = useParams();
 
     const fetchDetails = async (id) => {
-        const data = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+        const data = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${theKey}`)
         const detailData = await data.json()
         setDetails(detailData)
         console.log(detailData)
